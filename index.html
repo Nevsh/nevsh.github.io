@@ -1,157 +1,196 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
-<head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Sven H. | Home</title>
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
 
-  <title>Sven H. | Home</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+    <!-- Favicons -->
+    <link href="assets/img/favicon-32x32.png" rel="icon" />
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
 
-  <!-- Favicons -->
-  <link href="assets/img/favicon-32x32.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=https://fonts.googleapis.com/css?family=Inconsolata:400,500,600,700|Raleway:400,400i,500,500i,600,600i,700,700i"
+      rel="stylesheet"
+    />
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=https://fonts.googleapis.com/css?family=Inconsolata:400,500,600,700|Raleway:400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+    <link
+      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
 
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet" />
 
-  <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
-
-  <!-- =======================================================
+    <!-- =======================================================
   * Template Name: MyPortfolio
   * Updated: Jul 27 2023 with Bootstrap v5.3.1
   * Template URL: https://bootstrapmade.com/myportfolio-bootstrap-portfolio-website-template/
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
-</head>
+  </head>
 
-<body>
-
-  <!-- ======= Navbar ======= -->
-  <div class="collapse navbar-collapse custom-navmenu" id="main-navbar">
-    <div class="container py-2 py-md-5">
-      <div class="row align-items-start">
-        <div class="col-md-2">
-          <ul class="custom-menu">
-            <li class="active"><a href="index.html">Home</a></li>
-            <li><a href="about.html">Über mich</a></li>
-          </ul>
+  <body>
+    <!-- ======= Navbar ======= -->
+    <div class="collapse navbar-collapse custom-navmenu" id="main-navbar">
+      <div class="container py-2 py-md-5">
+        <div class="row align-items-start">
+          <div class="col-md-2">
+            <ul class="custom-menu">
+              <li class="active"><a href="index.html">Home</a></li>
+              <li><a href="about.html">Über mich</a></li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <nav class="navbar navbar-light custom-navbar">
-    <div class="container">
-      <a class="navbar-brand" href="index.html">Sven Hoffmann | Nevsh</a>
-      <a href="#" class="burger" data-bs-toggle="collapse" data-bs-target="#main-navbar">
-        <span></span>
-      </a>
-    </div>
-  </nav>
-
-  <main id="main">
-
-    <!-- ======= Works Section ======= -->
-    <section class="section site-portfolio">
+    <nav class="navbar navbar-light custom-navbar">
       <div class="container">
-        <div class="row mb-5 align-items-center">
-          <div class="col-md-12 col-lg-6 mb-4 mb-lg-0" data-aos="fade-up">
-            <h2>Projekte</h2>
-            <p class="mb-0">Freizeit- und Hochschulprojekte</p>
+        <a class="navbar-brand" href="index.html">Sven Hoffmann | Nevsh</a>
+        <a
+          href="#"
+          class="burger"
+          data-bs-toggle="collapse"
+          data-bs-target="#main-navbar"
+        >
+          <span></span>
+        </a>
+      </div>
+    </nav>
+
+    <main id="main">
+      <!-- ======= Works Section ======= -->
+      <section class="section site-portfolio">
+        <div class="container">
+          <div class="row mb-5 align-items-center">
+            <div class="col-md-12 col-lg-6 mb-4 mb-lg-0" data-aos="fade-up">
+              <h2>Projekte</h2>
+              <p class="mb-0">Freizeit- und Hochschulprojekte</p>
+            </div>
+            <div
+              class="col-md-12 col-lg-6 text-start text-lg-end"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <div id="filters" class="filters">
+                <a href="#" data-filter="*" class="active">Alle</a>
+                <a href="#" data-filter=".eigene">Freizeit</a>
+                <a href="#" data-filter=".hochschule">Hochschule</a>
+              </div>
+            </div>
           </div>
-          <div class="col-md-12 col-lg-6 text-start text-lg-end" data-aos="fade-up" data-aos-delay="100">
-            <div id="filters" class="filters">
-              <a href="#" data-filter="*" class="active">Alle</a>
-              <a href="#" data-filter=".eigene">Freizeit</a>
-              <a href="#" data-filter=".hochschule">Hochschule</a>
+          <div
+            id="portfolio-grid"
+            class="row no-gutter"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <div class="item eigene col-sm-6 col-md-4 col-lg-4 mb-4">
+              <a href="memoboard.html" class="item-wrap fancybox">
+                <div class="work-info">
+                  <h3>Memoboard</h3>
+                </div>
+                <img class="img-fluid" src="assets/img/memoboard_big.png" />
+              </a>
+            </div>
+            <div class="item hochschule col-sm-6 col-md-4 col-lg-4 mb-4">
+              <a href="innoclick.html" class="item-wrap fancybox">
+                <div class="work-info">
+                  <h3>Inno Click</h3>
+                </div>
+                <img class="img-fluid" src="assets/img/inno_click_big.png" />
+              </a>
+            </div>
+            <div class="item hochschule col-sm-6 col-md-4 col-lg-4 mb-4">
+              <a href="otto.html" class="item-wrap fancybox">
+                <div class="work-info">
+                  <h3>Otto's Journey</h3>
+                </div>
+                <img class="img-fluid" src="assets/img/otto_pinguin_big.png" />
+              </a>
+            </div>
+            <div class="item hochschule col-sm-6 col-md-4 col-lg-4 mb-4">
+              <a href="snack.html" class="item-wrap fancybox">
+                <div class="work-info">
+                  <h3>"React to Snack"-Automat</h3>
+                </div>
+                <img class="img-fluid" src="assets/img/snackautomat_big.png" />
+              </a>
+            </div>
+            <div class="item hochschule col-sm-6 col-md-4 col-lg-4 mb-4">
+              <a href="habit.html" class="item-wrap fancybox">
+                <div class="work-info">
+                  <h3>Habit-App</h3>
+                </div>
+                <img class="img-fluid" src="assets/img/habbit_app_big.png" />
+              </a>
             </div>
           </div>
         </div>
-        <div id="portfolio-grid" class="row no-gutter" data-aos="fade-up" data-aos-delay="200">
-          <div class="item eigene col-sm-6 col-md-4 col-lg-4 mb-4">
-            <a href="memoboard.html" class="item-wrap fancybox">
-              <div class="work-info">
-                <h3>Memoboard</h3>
-              </div>
-              <img class="img-fluid" src="assets/img/memoboard_big.png">
-            </a>
-          </div>
-          <div class="item hochschule col-sm-6 col-md-4 col-lg-4 mb-4">
-            <a href="innoclick.html" class="item-wrap fancybox">
-              <div class="work-info">
-                <h3>Inno Click</h3>
-              </div>
-              <img class="img-fluid" src="assets/img/inno_click_big.png">
-            </a>
-          </div>
-          <div class="item hochschule col-sm-6 col-md-4 col-lg-4 mb-4">
-            <a href="otto.html" class="item-wrap fancybox">
-              <div class="work-info">
-                <h3>Otto's Journey</h3>
-              </div>
-              <img class="img-fluid" src="assets/img/otto_pinguin_big.png">
-            </a>
-          </div>
-        </div>
-      </div>
-    </section><!-- End  Works Section -->
+      </section>
+      <!-- End  Works Section -->
 
+      <!-- ======= Services Section ======= -->
+    </main>
+    <!-- End #main -->
 
-    <!-- ======= Services Section ======= -->
-    
-
-  </main><!-- End #main -->
-
-  <!-- ======= Footer ======= -->
-  <footer class="footer" role="contentinfo">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-6">
-          <p class="mb-1">&copy; Copyright MyPortfolio. All Rights Reserved</p>
-          <div class="credits">
-            <!--
+    <!-- ======= Footer ======= -->
+    <footer class="footer" role="contentinfo">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6">
+            <p class="mb-1">
+              &copy; Copyright MyPortfolio. All Rights Reserved
+            </p>
+            <div class="credits">
+              <!--
             All the links in the footer should remain intact.
             You can delete the links only if you purchased the pro version.
             Licensing information: https://bootstrapmade.com/license/
             Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=MyPortfolio
           -->
-            Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+              Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+            </div>
           </div>
-        </div>
-        <div class="col-sm-6 social text-md-end">
-          <!-- <a href="#"><span class="bi bi-twitter"></span></a>
+          <div class="col-sm-6 social text-md-end">
+            <!-- <a href="#"><span class="bi bi-twitter"></span></a>
           <a href="#"><span class="bi bi-facebook"></span></a>
           <a href="#"><span class="bi bi-instagram"></span></a>
           <a href="#"><span class="bi bi-linkedin"></span></a> -->
-          <!-- <a href="#"><span class="bi bi-github"></span></a>
+            <!-- <a href="#"><span class="bi bi-github"></span></a>
           <a href="#"><span class="bi bi-envelope"></span></a> -->
+          </div>
         </div>
       </div>
-    </div>
-  </footer>
+    </footer>
 
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+    <a
+      href="#"
+      class="back-to-top d-flex align-items-center justify-content-center"
+      ><i class="bi bi-arrow-up-short"></i
+    ></a>
 
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
 
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
-
-</body>
-
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+  </body>
 </html>
